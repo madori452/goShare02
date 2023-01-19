@@ -1,0 +1,69 @@
+// BG style
+$bg_LightBlue: #06f3f9;
+$bg_LightGreen:#01ffda;
+$bg_PrimaryBlue: #0074ff;
+// Text style
+$text_PrimaryBlue:#173e6f;
+$text_Yellow:#f5fb6b;
+// Btn style
+@mixin download_btn{
+    background-color: $text_Yellow;
+    border-radius: 24px;
+    color: $text_PrimaryBlue;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0 1px;
+    border: none;
+    padding: 16px 62px;
+}
+
+//RWD Mixin
+@mixin pc{
+  @media(max-width:1440px){
+    @content;
+  }
+}
+@mixin pc-sm{
+  @media(max-width:1000px){
+    @content;
+  }
+}
+@mixin pad{
+  @media(max-width:768px){
+    @content;
+  }
+}
+@mixin phone{
+  @media(max-width:414px){
+    @content;
+  }
+}
+
+@mixin phoneSE{
+  @media(max-width:375px){
+    @content;
+  }
+}
+
+.text_Primary,section.go-ride .col-text{
+    color: $text_PrimaryBlue;
+}
+
+button.download{
+   @include download_btn;
+}
+
+section.banner, section.go-ride-pic{
+    background-color: $bg_LightBlue;
+}
+section.scroll-bicycle{
+    background-color: $bg_PrimaryBlue;
+}
+
+section.scroll-bicycle h2{
+    color: $text_Yellow;
+}
+section.go-ride{
+    background-color: $bg_LightGreen;
+}

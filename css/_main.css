@@ -1,0 +1,25 @@
+.text_Primary, section.go-ride .col-text {
+  color: #173e6f; }
+
+button.download {
+  background-color: #f5fb6b;
+  border-radius: 24px;
+  color: #173e6f;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0 1px;
+  border: none;
+  padding: 16px 62px; }
+
+section.banner, section.go-ride-pic {
+  background-color: #06f3f9; }
+
+section.scroll-bicycle {
+  background-color: #0074ff; }
+
+section.scroll-bicycle h2 {
+  color: #f5fb6b; }
+
+section.go-ride {
+  background-color: #01ffda; }
